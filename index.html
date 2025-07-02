@@ -65,12 +65,12 @@
     <h1>Room 404</h1>
     <div id="game-container"></div>
     <div id="reset-button" onclick="window.location.reload()">New Game</div>
-                <div id="ghost-messages"></div>
-                <div id="riddle"></div>
-            </div>
-        </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/game.js"></script>
+    <script>
+        // Initialize the game when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            const game = new CardGame();
+        });
+    </script>
 </body>
 </html>
