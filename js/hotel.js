@@ -9,7 +9,7 @@ class HotelFinder {
                 price: 450,
                 rating: 4.8,
                 description: "Iconic luxury hotel in the heart of Manhattan",
-                image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800",
+                image: "https://www.theplaza.com/wp-content/uploads/2022/01/Plaza-Hotel-Interior-1.jpg",
                 bookingLink: "https://www.theplaza.com"
             },
             {
@@ -20,7 +20,7 @@ class HotelFinder {
                 price: 600,
                 rating: 4.9,
                 description: "Luxury hotel with stunning Central Park views",
-                image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800",
+                image: "https://www.ritzcarlton.com/content/dam/ritzcarlton/2020-redesign/hotels/north-america/united-states/new-york/ritzcarltonnewyorkcentralpark/hero/hero-ritzcarltonnewyorkcentralpark.jpg",
                 bookingLink: "https://www.ritzcarlton.com"
             },
             {
@@ -31,7 +31,7 @@ class HotelFinder {
                 price: 350,
                 rating: 4.7,
                 description: "Historic hotel in the heart of London",
-                image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800",
+                image: "https://www.thelondonhotel.com/wp-content/uploads/2022/01/london-hotel-exterior.jpg",
                 bookingLink: "https://www.thelondonhotel.com"
             },
             {
@@ -42,7 +42,7 @@ class HotelFinder {
                 price: 500,
                 rating: 4.9,
                 description: "Legendary hotel on the Strand",
-                image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800",
+                image: "https://www.thesavoylondon.com/wp-content/uploads/2022/01/savoy-hotel-exterior.jpg",
                 bookingLink: "https://www.thesavoylondon.com"
             },
             {
@@ -53,7 +53,7 @@ class HotelFinder {
                 price: 300,
                 rating: 4.8,
                 description: "Luxury hotel in downtown Toronto",
-                image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800",
+                image: "https://www.ritzcarlton.com/content/dam/ritzcarlton/2020-redesign/hotels/north-america/canada/toronto/ritzcarltontoronto/hero/hero-ritzcarltontoronto.jpg",
                 bookingLink: "https://www.ritzcarlton.com"
             },
             {
@@ -64,7 +64,7 @@ class HotelFinder {
                 price: 250,
                 rating: 4.7,
                 description: "Historic hotel in the heart of Toronto",
-                image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800",
+                image: "https://www.fairmont.com/content/dam/fairmont/2020-redesign/hotels/north-america/canada/toronto/fairmontroyal-york/hero/hero-fairmontroyal-york.jpg",
                 bookingLink: "https://www.fairmont.com"
             },
             {
@@ -75,7 +75,7 @@ class HotelFinder {
                 price: 400,
                 rating: 4.8,
                 description: "Luxury hotel in the heart of Sydney",
-                image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800",
+                image: "https://www.langhamhotels.com/content/dam/langham/2020-redesign/hotels/australia/sydney/langham-sydney/hero/hero-langham-sydney.jpg",
                 bookingLink: "https://www.langhamhotels.com"
             },
             {
@@ -86,7 +86,7 @@ class HotelFinder {
                 price: 550,
                 rating: 4.9,
                 description: "Luxury hotel with harbor views",
-                image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800",
+                image: "https://www.hyatt.com/content/dam/hyatt/2020-redesign/hotels/australia/sydney/park-hyatt-sydney/hero/hero-park-hyatt-sydney.jpg",
                 bookingLink: "https://www.hyatt.com"
             }
         ];
@@ -112,7 +112,7 @@ class HotelFinder {
             const hotelCard = document.createElement("div");
             hotelCard.className = "hotel-card";
             hotelCard.innerHTML = `
-                <img src="${hotel.image}" alt="${hotel.name}" class="hotel-image">
+                <img src="${hotel.image}" alt="${hotel.name}" class="hotel-image" loading="lazy">
                 <h3>${hotel.name}</h3>
                 <p>Location: ${hotel.city}, ${hotel.country}</p>
                 <p>Rating: ${hotel.rating}⭐</p>
