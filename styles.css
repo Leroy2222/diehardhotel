@@ -6,7 +6,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    position: relative;
     min-height: 100vh;
 }
 
@@ -28,4 +27,4 @@ body {
     padding: 20px;
 }
 
-/* Rest of your existing styles... */
+/* Your existing styles here */
