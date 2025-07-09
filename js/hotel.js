@@ -1,27 +1,11 @@
 class HotelFinder {
     constructor() {
-        this.hotels = [
-            {
-                id: 1,
-                name: "London Hotel",
-                country: "uk",
-                city: "London",
-                price: 200,
-                rating: 4.5,
-                images: [
-                    "https://via.placeholder.com/200x150?text=Test+Image"
-                ],
-                amenities: ["Test"],
-                roomTypes: ["Test"],
-                bookingLink: "#"
-            }
-        ];
-        console.log("Hotels data:", this.hotels);
+        this.hotels = window.hotels || [];
+        console.log("Hotels data in constructor:", this.hotels);
     }
 
     searchHotels(country) {
         console.log("Searching hotels for country:", country);
-        console.log("Available hotels:", this.hotels);
         const hotels = this.hotels.filter(hotel => hotel.country === country);
         console.log("Found hotels:", hotels);
         return hotels;
