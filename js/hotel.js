@@ -17,7 +17,38 @@ class HotelFinder {
                 roomTypes: ["Deluxe", "Suite", "Executive"],
                 bookingLink: "https://www.theplaza.com"
             },
-            // Add other hotels with similar structure
+            { 
+                id: 2, 
+                name: "The Waldorf Astoria", 
+                country: "usa", 
+                city: "New York", 
+                price: 500, 
+                rating: 4.9,
+                images: [
+                    "https://images.unsplash.com/photo-1531404997487-23b9d4a69131?w=800",
+                    "https://images.unsplash.com/photo-1531404997487-23b9d4a69131?w=800",
+                    "https://images.unsplash.com/photo-1531404997487-23b9d4a69131?w=800"
+                ],
+                amenities: ["Pool", "Spa", "Restaurant", "Gym", "Free WiFi", "Business Center"],
+                roomTypes: ["Classic", "Premier", "Suite"],
+                bookingLink: "https://www.waldorfastoria.com/new-york"
+            },
+            { 
+                id: 3, 
+                name: "The Ritz-Carlton", 
+                country: "usa", 
+                city: "New York", 
+                price: 600, 
+                rating: 5,
+                images: [
+                    "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
+                    "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
+                    "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800"
+                ],
+                amenities: ["Pool", "Spa", "Restaurant", "Gym", "Free WiFi", "Business Center", "Concierge"],
+                roomTypes: ["Club", "Suite", "Penthouse"],
+                bookingLink: "https://www.ritzcarlton.com/en/hotels/new-york"
+            }
         ];
     }
 
@@ -27,17 +58,8 @@ class HotelFinder {
 
     renderHotels(hotels) {
         const hotelList = document.getElementById("hotelList");
-        if (!hotelList) {
-            console.error("hotelList element not found");
-            return;
-        }
         hotelList.innerHTML = "";
         
-        if (hotels.length === 0) {
-            hotelList.innerHTML = "<p>No hotels found for this country.</p>";
-            return;
-        }
-
         hotels.forEach(hotel => {
             const hotelCard = document.createElement("div");
             hotelCard.className = "hotel-card";
@@ -96,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const hotelFinder = new HotelFinder();
     const countrySelect = document.getElementById("country");
     const searchButton = document.getElementById("searchButton");
-    
+
     if (!searchButton) {
         console.error("Search button not found");
         return;
@@ -129,25 +151,5 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         hotelFinder.renderHotels(hotels);
-    });
-});
-    console.log("Hotel script loaded");
-    const hotelFinder = new HotelFinder();
-    const countrySelect = document.getElementById("country");
-    const searchButton = document.getElementById("searchButton");
-    
-    if (!searchButton) {
-        console.error("Search button not found");
-        return;
-    }
-    
-    searchButton.addEventListener("click", () => {
-        const selectedCountry = countrySelect.value;
-        console.log("Searching for hotels in:", selectedCountry);
-        if (selectedCountry) {
-            const hotels = hotelFinder.searchHotels(selectedCountry);
-            console.log("Found hotels:", hotels);
-            hotelFinder.renderHotels(hotels);
-        }
     });
 });
