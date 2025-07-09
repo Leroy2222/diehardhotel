@@ -9,15 +9,15 @@ class HotelFinder {
                 price: 450, 
                 rating: 4.8,
                 images: [
-                    "https://www.theplaza.com/wp-content/uploads/2022/01/Plaza-Hotel-Interior-1.jpg",
-                    "https://www.theplaza.com/wp-content/uploads/2022/01/Plaza-Hotel-Exterior.jpg",
-                    "https://www.theplaza.com/wp-content/uploads/2022/01/Plaza-Hotel-Room.jpg"
+                    "https://images.unsplash.com/photo-1522092979303-2e4a66943c43?w=800",
+                    "https://images.unsplash.com/photo-1522092979303-2e4a66943c43?w=800",
+                    "https://images.unsplash.com/photo-1522092979303-2e4a66943c43?w=800"
                 ],
                 amenities: ["Pool", "Spa", "Restaurant", "Gym", "Free WiFi"],
                 roomTypes: ["Deluxe", "Suite", "Executive"],
                 bookingLink: "https://www.theplaza.com"
             },
-            // ... Add other hotels with similar structure
+            // Add other hotels with similar structure
         ];
     }
 
