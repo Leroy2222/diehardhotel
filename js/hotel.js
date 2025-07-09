@@ -156,6 +156,7 @@ class HotelFinder {
     }
 }
 
+console.log("Hotel script loaded");
 document.addEventListener("DOMContentLoaded", () => {
     const hotelFinder = new HotelFinder();
     const countrySelect = document.getElementById("country");
