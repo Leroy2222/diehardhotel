@@ -123,3 +123,23 @@ body {
 .hotel-image:hover {
     transform: scale(1.05);
 }
+.hotel-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+}
+.hotel-image {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    transition: all var(--transition-speed);
+    opacity: 1;
+    transform: scale(1);
+}
+.hotel-image:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
