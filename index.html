@@ -3,27 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Booking</title>
-    <style>
-        body {
-            background: url("images/hotel-background.jpg") no-repeat center center fixed;
-            background-size: cover;
-            background-blend-mode: darken;
-            color: white;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            min-height: 100vh;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-    </style>
+    <title>Die Hard Hotel Booking</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <!-- Your existing content here -->
+        <h1>Die Hard Hotel Booking</h1>
+        <form class="search-form">
+            <select id="country">
+                <option value="">Select Country</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="france">France</option>
+            </select>
+            <input type="text" id="search" placeholder="Search hotels...">
+            <button type="button" id="searchButton">Search</button>
+        </form>
+        <div id="hotelList"></div>
     </div>
 </body>
 </html>
