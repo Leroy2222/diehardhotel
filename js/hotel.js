@@ -20,7 +20,7 @@ class HotelFinder {
                 city: "New York", 
                 price: 500, 
                 rating: 4.9,
-                image: "https://www.waldorfastoria.com/content/dam/waldorfastoria/properties/newyork/homepage/hero/waldorfastoria_newyork_hero_desktop_1920x1080.jpg",
+                images: ["https://www.waldorfastoria.com/content/dam/waldorfastoria/properties/newyork/homepage/hero/waldorfastoria_newyork_hero_desktop_1920x1080.jpg", "https://www.waldorfastoria.com/content/dam/waldorfastoria/properties/newyork/rooms-and-suites/waldorfastoria_newyork_rooms_and_suites_desktop_1920x1080.jpg", "https://www.waldorfastoria.com/content/dam/waldorfastoria/properties/newyork/dining/waldorfastoria_newyork_dining_desktop_1920x1080.jpg"],
                 amenities: ["Pool", "Spa", "Restaurant", "Gym", "Free WiFi", "Business Center"],
                 roomTypes: ["Classic", "Premier", "Suite"],
                 bookingLink: "https://www.waldorfastoria.com/new-york"
@@ -32,7 +32,7 @@ class HotelFinder {
                 city: "New York", 
                 price: 600, 
                 rating: 5,
-                image: "https://www.ritzcarlton.com/content/dam/ritzcarlton/properties/newyork/homepage/hero/ritzcarlton_newyork_hero_desktop_1920x1080.jpg",
+                images: ["https://www.ritzcarlton.com/content/dam/ritzcarlton/properties/newyork/homepage/hero/ritzcarlton_newyork_hero_desktop_1920x1080.jpg", "https://www.ritzcarlton.com/content/dam/ritzcarlton/properties/newyork/rooms-and-suites/ritzcarlton_newyork_rooms_and_suites_desktop_1920x1080.jpg", "https://www.ritzcarlton.com/content/dam/ritzcarlton/properties/newyork/dining/ritzcarlton_newyork_dining_desktop_1920x1080.jpg"],
                 amenities: ["Pool", "Spa", "Restaurant", "Gym", "Free WiFi", "Business Center", "Concierge"],
                 roomTypes: ["Club", "Suite", "Penthouse"],
                 bookingLink: "https://www.ritzcarlton.com/en/hotels/new-york"
@@ -44,7 +44,7 @@ class HotelFinder {
                 city: "London", 
                 price: 350, 
                 rating: 4.9,
-                image: "https://www.thesavoy.com/content/dam/thesavoy/properties/london/homepage/hero/thesavoy_london_hero_desktop_1920x1080.jpg",
+                images: ["https://www.thesavoy.com/content/dam/thesavoy/properties/london/homepage/hero/thesavoy_london_hero_desktop_1920x1080.jpg", "https://www.thesavoy.com/content/dam/thesavoy/properties/london/rooms-and-suites/thesavoy_london_rooms_and_suites_desktop_1920x1080.jpg", "https://www.thesavoy.com/content/dam/thesavoy/properties/london/dining/thesavoy_london_dining_desktop_1920x1080.jpg"],
                 amenities: ["Pool", "Spa", "Restaurant", "Gym", "Free WiFi"],
                 roomTypes: ["Classic", "Premier", "Suite"],
                 bookingLink: "https://www.thesavoy.com"
@@ -56,7 +56,7 @@ class HotelFinder {
                 city: "London", 
                 price: 400, 
                 rating: 5,
-                image: "https://www.theritzlondon.com/content/dam/theritzlondon/properties/london/homepage/hero/theritzlondon_london_hero_desktop_1920x1080.jpg",
+                images: ["https://www.theritzlondon.com/content/dam/theritzlondon/properties/london/homepage/hero/theritzlondon_london_hero_desktop_1920x1080.jpg", "https://www.theritzlondon.com/content/dam/theritzlondon/properties/london/rooms-and-suites/theritzlondon_london_rooms_and_suites_desktop_1920x1080.jpg", "https://www.theritzlondon.com/content/dam/theritzlondon/properties/london/dining/theritzlondon_london_dining_desktop_1920x1080.jpg"],
                 amenities: ["Pool", "Spa", "Restaurant", "Gym", "Free WiFi", "Business Center"],
                 roomTypes: ["Classic", "Premier", "Suite"],
                 bookingLink: "https://www.theritzlondon.com"
@@ -68,7 +68,7 @@ class HotelFinder {
                 city: "London", 
                 price: 450, 
                 rating: 5,
-                image: "https://www.thedorchester.com/content/dam/thedorchester/properties/london/homepage/hero/thedorchester_london_hero_desktop_1920x1080.jpg",
+                images: ["https://www.thedorchester.com/content/dam/thedorchester/properties/london/homepage/hero/thedorchester_london_hero_desktop_1920x1080.jpg", "https://www.thedorchester.com/content/dam/thedorchester/properties/london/rooms-and-suites/thedorchester_london_rooms_and_suites_desktop_1920x1080.jpg", "https://www.thedorchester.com/content/dam/thedorchester/properties/london/dining/thedorchester_london_dining_desktop_1920x1080.jpg"],
                 amenities: ["Pool", "Spa", "Restaurant", "Gym", "Free WiFi", "Business Center", "Concierge"],
                 roomTypes: ["Classic", "Premier", "Suite"],
                 bookingLink: "https://www.thedorchester.com"
@@ -80,7 +80,7 @@ class HotelFinder {
                 city: "Paris", 
                 price: 500, 
                 rating: 4.7,
-                image: "https://www.hoteldecillon.com/content/dam/hoteldecillon/properties/paris/homepage/hero/hoteldecillon_paris_hero_desktop_1920x1080.jpg",
+                images: ["https://www.hoteldecillon.com/content/dam/hoteldecillon/properties/paris/homepage/hero/hoteldecillon_paris_hero_desktop_1920x1080.jpg", "https://www.hoteldecillon.com/content/dam/hoteldecillon/properties/paris/rooms-and-suites/hoteldecillon_paris_rooms_and_suites_desktop_1920x1080.jpg", "https://www.hoteldecillon.com/content/dam/hoteldecillon/properties/paris/dining/hoteldecillon_paris_dining_desktop_1920x1080.jpg"],
                 amenities: ["Pool", "Spa", "Restaurant", "Gym", "Free WiFi"],
                 roomTypes: ["Classic", "Premier", "Suite"],
                 bookingLink: "https://www.hoteldecillon.com"
@@ -92,7 +92,7 @@ class HotelFinder {
                 city: "Paris", 
                 price: 450, 
                 rating: 4.9,
-                image: "https://www.lemeurice.com/content/dam/lemeurice/properties/paris/homepage/hero/lemeurice_paris_hero_desktop_1920x1080.jpg",
+                images: ["https://www.lemeurice.com/content/dam/lemeurice/properties/paris/homepage/hero/lemeurice_paris_hero_desktop_1920x1080.jpg", "https://www.lemeurice.com/content/dam/lemeurice/properties/paris/rooms-and-suites/lemeurice_paris_rooms_and_suites_desktop_1920x1080.jpg", "https://www.lemeurice.com/content/dam/lemeurice/properties/paris/dining/lemeurice_paris_dining_desktop_1920x1080.jpg"],
                 amenities: ["Pool", "Spa", "Restaurant", "Gym", "Free WiFi", "Business Center"],
                 roomTypes: ["Classic", "Premier", "Suite"],
                 bookingLink: "https://www.lemeurice.com"
@@ -104,7 +104,7 @@ class HotelFinder {
                 city: "Paris", 
                 price: 600, 
                 rating: 5,
-                image: "https://www.plazaathenee.com/content/dam/plazaathenee/properties/paris/homepage/hero/plazaathenee_paris_hero_desktop_1920x1080.jpg",
+                images: ["https://www.plazaathenee.com/content/dam/plazaathenee/properties/paris/homepage/hero/plazaathenee_paris_hero_desktop_1920x1080.jpg", "https://www.plazaathenee.com/content/dam/plazaathenee/properties/paris/rooms-and-suites/plazaathenee_paris_rooms_and_suites_desktop_1920x1080.jpg", "https://www.plazaathenee.com/content/dam/plazaathenee/properties/paris/dining/plazaathenee_paris_dining_desktop_1920x1080.jpg"],
                 amenities: ["Pool", "Spa", "Restaurant", "Gym", "Free WiFi", "Business Center", "Concierge"],
                 roomTypes: ["Classic", "Premier", "Suite"],
                 bookingLink: "https://www.plazaathenee.com"
