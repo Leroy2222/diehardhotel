@@ -107,3 +107,19 @@ body {
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
+.hotel-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+.hotel-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    transition: transform var(--transition-speed);
+}
+.hotel-image:hover {
+    transform: scale(1.05);
+}

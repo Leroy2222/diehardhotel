@@ -8,7 +8,7 @@ class HotelFinder {
                 city: "New York", 
                 price: 450, 
                 rating: 4.8,
-                image: "https://www.theplaza.com/wp-content/uploads/2022/01/Plaza-Hotel-Interior-1.jpg",
+                images: ["https://www.theplaza.com/wp-content/uploads/2022/01/Plaza-Hotel-Interior-1.jpg", "https://www.theplaza.com/wp-content/uploads/2022/01/Plaza-Hotel-Exterior.jpg", "https://www.theplaza.com/wp-content/uploads/2022/01/Plaza-Hotel-Room.jpg"],
                 amenities: ["Pool", "Spa", "Restaurant", "Gym", "Free WiFi"],
                 roomTypes: ["Deluxe", "Suite", "Executive"],
                 bookingLink: "https://www.theplaza.com"
