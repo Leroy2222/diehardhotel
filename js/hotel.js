@@ -27,8 +27,17 @@ class HotelFinder {
 
     renderHotels(hotels) {
         const hotelList = document.getElementById("hotelList");
+        if (!hotelList) {
+            console.error("hotelList element not found");
+            return;
+        }
         hotelList.innerHTML = "";
         
+        if (hotels.length === 0) {
+            hotelList.innerHTML = "<p>No hotels found for this country.</p>";
+            return;
+        }
+
         hotels.forEach(hotel => {
             const hotelCard = document.createElement("div");
             hotelCard.className = "hotel-card";
@@ -83,14 +92,22 @@ class HotelFinder {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+    console.log("Hotel script loaded");
     const hotelFinder = new HotelFinder();
     const countrySelect = document.getElementById("country");
     const searchButton = document.getElementById("searchButton");
     
+    if (!searchButton) {
+        console.error("Search button not found");
+        return;
+    }
+    
     searchButton.addEventListener("click", () => {
         const selectedCountry = countrySelect.value;
+        console.log("Searching for hotels in:", selectedCountry);
         if (selectedCountry) {
             const hotels = hotelFinder.searchHotels(selectedCountry);
+            console.log("Found hotels:", hotels);
             hotelFinder.renderHotels(hotels);
         }
     });
