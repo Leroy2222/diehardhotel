@@ -4,21 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Finder</title>
-    <link rel="stylesheet" href="styles.css">
+    <script>
+        console.log("Inline script loaded");
+    </script>
     <script src="js/hotel.js" defer></script>
 </head>
 <body>
     <div class="container">
         <div class="search-form">
-            <select id="country">
-                <option value="">Select a country</option>
-                <option value="usa">USA</option>
-                <option value="uk">UK</option>
-                <option value="france">France</option>
-            </select>
             <button type="button" id="searchButton">Search Hotels</button>
         </div>
-        <div id="hotelList" class="hotel-list"></div>
+        <div id="hotelList"></div>
     </div>
 </body>
 </html>
