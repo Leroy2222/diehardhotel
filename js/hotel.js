@@ -92,6 +92,45 @@ class HotelFinder {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+    console.log("DOM Content Loaded");
+    const hotelFinder = new HotelFinder();
+    const countrySelect = document.getElementById("country");
+    const searchButton = document.getElementById("searchButton");
+    
+    if (!searchButton) {
+        console.error("Search button not found");
+        return;
+    }
+    if (!countrySelect) {
+        console.error("Country select not found");
+        return;
+    }
+    if (!document.getElementById("hotelList")) {
+        console.error("Hotel list container not found");
+        return;
+    }
+
+    searchButton.addEventListener("click", () => {
+        console.log("Search button clicked");
+        const selectedCountry = countrySelect.value;
+        console.log("Selected country:", selectedCountry);
+        
+        if (!selectedCountry) {
+            console.log("No country selected");
+            return;
+        }
+
+        const hotels = hotelFinder.searchHotels(selectedCountry);
+        console.log("Found hotels:", hotels);
+        
+        if (hotels.length === 0) {
+            console.log("No hotels found for country:", selectedCountry);
+            return;
+        }
+
+        hotelFinder.renderHotels(hotels);
+    });
+});
     console.log("Hotel script loaded");
     const hotelFinder = new HotelFinder();
     const countrySelect = document.getElementById("country");
