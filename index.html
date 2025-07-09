@@ -4,40 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Finder</title>
-    <style>
-        .hotel-card {
-            background: white;
-            padding: 20px;
-            margin: 20px;
-            border: 1px solid #ddd;
-        }
-        .hotel-info h3 {
-            color: #333;
-        }
-        #hotelList {
-            margin-top: 20px;
-        }
-    </style>
-    <script>
-        console.log("Inline script loaded");
-        const hotels = [
-            {
-                id: 1,
-                name: "London Hotel",
-                country: "uk",
-                city: "London",
-                price: 200,
-                rating: 4.5,
-                images: [
-                    "https://via.placeholder.com/200x150?text=Test+Image"
-                ],
-                amenities: ["Test"],
-                roomTypes: ["Test"],
-                bookingLink: "#"
-            }
-        ];
-        console.log("Hotels data loaded:", hotels);
-    </script>
+    <link rel="stylesheet" href="styles.css">
     <script src="js/hotel.js" defer></script>
 </head>
 <body>
@@ -51,7 +18,7 @@
             </select>
             <button type="button" id="searchButton">Search Hotels</button>
         </div>
-        <div id="hotelList"></div>
+        <div id="hotelList" class="hotel-list"></div>
     </div>
 </body>
 </html>
